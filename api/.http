@@ -6,6 +6,9 @@ GET {{host}}/users
 ### Get a specific user
 GET {{host}}/users/2
 
+### User does not exist
+GET {{host}}/users/72
+
 ### Create a new playlist
 POST {{host}}/users/3/playlists
 Content-Type: application/json
@@ -13,4 +16,13 @@ Content-Type: application/json
 {
     "name": "When He Was A Young Warthog",
     "description": "Can You Not"
+}
+
+### Playlist can't be created
+POST {{host}}/users/4/playlists
+Content-Type: application/json
+
+{
+    "name": "",
+    "description": "Something"
 }

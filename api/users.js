@@ -32,7 +32,7 @@ router.get("/:id", async (req, res, next) => {
 
 router.post("/:id/playlists", async (req, res, next) => {
   const { id } = req.params;
-  const { name, description, user } = req.body;
+  const { name, description } = req.body;
   if (!name) {
     return next({
       status: 404,
