@@ -4,7 +4,7 @@
 GET {{host}}/users
 
 ### Get a specific user
-GET {{host}}/users/2
+GET {{host}}/users/3
 
 ### User does not exist
 GET {{host}}/users/72
